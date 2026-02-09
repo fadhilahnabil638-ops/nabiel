@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>For My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <audio id="music" loop>
+    <source src="c:\Users\ADVAN\Downloads\SpotiDown.App - You _ I - Diego Gonzalez.mp3" type="audio/mp3">
+    Browser kamu tidak mendukung audio.
+</audio>
+
+
+
+    <audio id="music" loop>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="hearts"></div>
+
+    <nav>
+        <button onclick="showPage(0)">Home</button>
+        <button onclick="showPage(1)">Tentang Kamu</button>
+        <button onclick="showPage(2)">I Love You</button>
+        <button onclick="showPage(3)">Pesan</button>
+        <button onclick="showPage(4)">Akhir</button>
+    </nav>
+
+    <div class="container">
+
+        <section class="page active">
+            <h1>Hai Kamu 💕</h1>
+            <p>
+                Aku bikin website ini bukan cuma buat gaya-gayaan.<br>
+                Tapi karena aku pengen kamu tau satu hal penting.
+            </p>
+            <button onclick="nextPage()">Lanjut ➜</button>
+        </section>
+
+        <section class="page">
+            <h1>Tentang Kamu 🌸</h1>
+            <p>
+                Kamu itu sederhana tapi istimewa.<br>
+                Senyummu bikin dunia kerasa lebih hangat.<br>
+                Cara kamu ngomong, ketawa, bahkan diam… semuanya berarti.
+            </p>
+            <button onclick="prevPage()">⬅ Back</button>
+            <button onclick="nextPage()">Next ➜</button>
+        </section>
+
+        <section class="page">
+            <h1>I LOVE YOU ❤️</h1>
+            <p class="big-text">
+                I love you bukan cuma hari ini.<br>
+                Tapi setiap detik, setiap napas,<br>
+                dan setiap mimpi yang aku punya.
+            </p>
+            <button onclick="prevPage()">⬅ Back</button>
+            <button onclick="nextPage()">Next ➜</button>
+        </section>
+
+        <section class="page">
+            <h1>Pesan Dari Aku 💌</h1>
+            <p>
+                Kalau suatu hari kamu capek,<br>
+                ingat ada aku yang siap dengerin.<br><br>
+                Kalau dunia jahat ke kamu,<br>
+                aku bakal berdiri paling depan buat jagain kamu.
+            </p>
+            <button onclick="prevPage()">⬅ Back</button>
+            <button onclick="nextPage()">Next ➜</button>
+        </section>
+
+        <section class="page">
+            <h1>Akhir Tapi Bukan Selesai 🌙</h1>
+            <p>
+                Website ini mungkin berhenti di sini,<br>
+                tapi rasa sayangku ke kamu nggak akan pernah ada ending.
+            </p>
+            <button onclick="playMusic()">Putar Musik 🎶</button>
+            <button onclick="prevPage()">⬅ Back</button>
+        </section>
+
+    </div>
+    <div class="music-control">
+        <button onclick="playMusic()">▶ Play</button>
+        <button onclick="pauseMusic()">⏸ Pause</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
