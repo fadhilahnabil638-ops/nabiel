@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    z-index: 10;
+}
+
+nav button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px 18px;
+    margin: 5px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+
+nav button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page {
+    display: none;
+    max-width: 600px;
+    animation: fade 1s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.big-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background: #ff4b6e;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #ff1e4d;
+}
+
+/* animasi halaman */
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* animasi hati */
+.hearts span {
+    position: absolute;
+    bottom: -20px;
+    font-size: 20px;
+    animation: float 5s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
